@@ -1,0 +1,491 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height:100vh;
+    overflow: hidden;
+    background-color: #4b4b4b;
+  }
+
+  
+
+  p{
+    color:white;
+  }
+
+input{
+      border: 2px solid white;
+      border-radius: 10px;
+      outline: none;
+      padding: 5px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+  .checkbtn{
+    font-size:25px;
+    color:#ffffff;
+    float:right;
+    margin:20px;
+    cursor:pointer;
+    display:none;
+  }
+  
+  #check{
+    display:none;
+  }
+  
+  
+
+
+ 
+  .logo-link{
+    display:none;
+  }
+  
+  
+  
+  .section-btn {
+    width:200px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 16px;
+    outline: none;
+    transition: color 0.3s;
+    position:relative;
+  }
+  
+  .section-btn:hover {
+    background-color: #1300a3;
+  }
+  
+  .section-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    right: 5px;
+    height: 1px;
+    background-color: white;
+  }
+  
+  
+
+.container{
+    margin:0px;
+    overflow: hidden;
+}
+
+.row{
+    color: white;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    overflow: auto;
+}
+
+
+.card-01{
+    background-color: #432cf4;
+    position:relative;
+    flex:1;
+    max-width:200px;
+    height: 100vh;
+}
+
+.card-02{
+  background-color:#1300a3;
+    position:relative;
+    flex:1;
+    max-width:100%;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.card-02::-webkit-scrollbar {
+    width:10px;
+  }
+
+  
+  .card-02::-webkit-scrollbar-thumb {
+    background-color: #4b4b4b; 
+    border-radius: 50px; 
+  }
+
+
+.row2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row3 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/*transparent element*/
+.card-03{
+    background-color: #4b4b4b00;
+    color:#ffffff;
+    position:relative;
+    flex: 1; 
+    max-width:50%;
+    height: 100vh;
+    margin:10px;
+    box-sizing: border-box;
+
+}
+
+.botones {
+  background: #52525200;
+  color: #ffffffda;
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  border:2px solid #432cf4;
+  margin:10px;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+}
+
+
+.step-wizard-list {
+  background: #52525200;
+  color: #ffffffda;
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  border:2px solid #432cf4;
+  margin:10px;
+  position: relative;
+  z-index: 10;
+  flex-wrap: wrap;
+  width:100%;
+  justify-content: center;
+}
+
+
+  /*back and next*/
+  .card-05{
+    position:relative;
+    border-radius: 20px;
+    flex:1;
+    max-width:50%;
+    height: 50px;
+    margin:10px;
+}
+.card-055{
+    position:relative;
+    border-radius: 20px;
+    flex:1;
+    max-width:100%;
+    height: 50px;
+    margin-top:10px;
+}
+
+
+.card-06{
+    background:#ffffff;
+    color:#ffffff;
+    position:relative;
+    flex:1;
+    max-width:50px;
+    height: 50px;
+    margin:5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.4);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+}
+
+@media (min-width: 800px) and (max-width: 1100px){
+
+  .logo-link{
+    position:absolute;
+    display:flex;
+    padding:0px 15px;
+    left:2px;
+    top:20px;
+    align-items: center;
+
+    align-items: center;
+    text-decoration: none; 
+    user-select: none; 
+    cursor: pointer;
+  }
+  .logo {
+    height: 45px;
+    padding:0 10px;
+  }
+  .logo-name {
+    font-size: 20px; 
+    color: #ffffff; 
+  }
+
+
+  .section-btn {
+      width:100%;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 20px 0;
+      font-size: 16px;
+      outline: none;
+      transition: color 0.3s;
+      position:relative;
+    }
+  
+  
+  .card-05{
+    position:relative;
+    border-radius: 20px;
+    flex:1;
+    max-width:30%;
+    height: 50px;
+    margin:10px;
+}
+  
+    
+
+  .card-01{
+      flex:100%;
+      max-width:100%;
+      height:60px;
+  }
+  .card-02{
+      flex:100%;
+      max-width:100%;
+      
+  }
+
+  .card-03{
+      flex:100%;
+      max-width:100%;
+  }
+  
+  
+  .step-wizard-list {
+    background: #52525200;
+    color: #ffffffda;
+    border:2px solid #432cf4;
+    border-radius: 20px;
+    list-style-type: none;
+    display: flex;
+    padding: 20px 10px;
+    margin:10px;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+    width:60%;
+    justify-content: center;
+  }
+
+  
+
+  
+  
+  #check:checked~.card-02{
+      display:none;
+    }
+  #check:checked~.card-01{
+      height:100vh;
+    }
+
+
+  
+  .logo{
+      padding:0px 0px 0px 20px;
+      height:60px;
+  }
+
+  .checkbtn{
+      display:block;
+      margin:20px 30px 20px 20px;
+    }
+    
+ 
+  
+    .checkbtn .fa-bars {
+      display: block;
+    }
+    
+    .checkbtn .fa-times {
+      display: none;
+    }
+    
+    #check:checked ~ .checkbtn .fa-bars {
+      display: none;
+    }
+    
+    #check:checked ~ .checkbtn .fa-times {
+      display: block;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:800px){
+
+  .logo-link{
+    position:absolute;
+    display:flex;
+    padding:0px 15px;
+    left:2px;
+    top:20px;
+
+    align-items: center;
+    text-decoration: none; 
+    user-select: none; 
+    cursor: pointer;
+  }
+  .logo {
+    height: 45px;
+    padding:0 10px;
+  }
+  .logo-name {
+    font-size: 20px; 
+    color: #ffffff; 
+  }
+
+    .section-btn {
+        width:100%;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 20px 0;
+        font-size: 16px;
+        outline: none;
+        transition: color 0.3s;
+        position:relative;
+      }
+    
+      
+
+    .card-01{
+        flex:100%;
+        max-width:100%;
+        height:60px;
+        background-color: #1300a3;
+    }
+    .card-02{
+        flex:100%;
+        max-width:100%;
+        
+    }
+
+    .card-03{
+        flex:100%;
+        max-width:100%;
+    }
+  
+  
+  
+    .step-wizard-list {
+      background: #52525200;
+      color: #ffffffda;
+      border:2px solid #432cf4;
+      border-radius: 20px;
+      list-style-type: none;
+      display: flex;
+      padding: 20px 10px;
+      margin:10px;
+      position: relative;
+      z-index: 10;
+      flex-wrap: wrap;
+      width:100%;
+      justify-content: center;
+    }
+
+
+    
+    
+    #check:checked~.card-02{
+        display:none;
+      }
+    #check:checked~.card-01{
+        height:100vh;
+      }
+
+
+    
+    
+    .logo{
+      padding:0px 0px 0px 20px;
+      height:60px;
+    }
+
+    .checkbtn{
+        display:block;
+        margin:20px 30px 20px 20px;
+      }
+      
+   
+    
+      .checkbtn .fa-bars {
+        display: block;
+      }
+      
+      .checkbtn .fa-times {
+        display: none;
+      }
+      
+      #check:checked ~ .checkbtn .fa-bars {
+        display: none;
+      }
+      
+      #check:checked ~ .checkbtn .fa-times {
+        display: block;
+      }
+}
+
+
+
+.translated_text {
+      text-align: left;
+      background-color: #4b4b4b00;
+      border: 2px solid #432cf4;
+      border-radius: 10px;
+      padding: 20px;
+      width: 100%;
+      height: 40vh; 
+      font-size: 1.0rem;
+      color: white;
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow-wrap: break-word; 
+      overflow-y:auto;
+    }
+  
+    .translated_text::-webkit-scrollbar {
+      width:7px;
+    }
+  
+    .translated_text::-webkit-scrollbar-track {
+      background-color: #ffffff00; 
+      border-radius: 25px; 
+    }
+    .translated_text::-webkit-scrollbar-thumb {
+      background-color: #0973edad; 
+      border-radius: 25px; 
+    }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="dynamic_element.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <style id="custom-style"></style>
+  <div class="container">
+    <div class="row">
+        <div class="card-01">
+            <div class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </label>
+        
+
+                <a href="./index.html" class="logo-link">
+                    <div class="logo-name">HUSH <span style="color: rgb(0, 255, 0); font-size:16px;font-weight: bold;">Beta</span></div>
+                </a>
+
+                
+            </div>
+            
+            <button class="section-btn" onclick="toggleSection('home')">Home</button>
+            <button class="section-btn" onclick="toggleSection('dashboard')">Dashboard</button>
+            <button class="section-btn" onclick="toggleSection('streamers')">Streamers</button>
+        </div>
+        <div class="card-02">
+                <div class="row2">
+                    <div class="card-03">
+                        
+                        
+                        <div class="row3">
+                                <div class="card-05">
+                                    <button id="backButton" class="stepButton">Back</button>
+                                </div>
+                                <div class="card-05">
+                                    <button id="nextButton" class="stepButton">Next</button>
+                                </div>
+                        </div>
+                        <div class="row3">
+                            <div class="step-wizard-list">
+                                <div id="block1" class="dinamic">
+                                    <div class="text-title">
+                                        <span>Welcome to HUSH Translator</span>
+                                    </div>
+                                    <br>
+                                    <div class="text-content">
+                                        <span>Now is possible to <span style="color: rgb(0, 255, 0); font-weight: bold;">view and listen to all streams in different languages</span>. The aim of this translator is to offer streamers the opportunity to reach out to a broader range of communities</span>
+                                    </div>
+                                    <br>
+                                    <div class="text-content">
+                                        <span>Supported by <span style="color: rgb(0, 255, 0); font-weight: bold;">streamlanguages.com</span></span>
+                                    </div>
+                                </div>
+
+                                <div id="block2" class="dinamic">
+                                    <div class="text-title">
+                                        <span style="color: rgb(0, 255, 0); font-weight: bold;">Select the languages</span>
+                                    </div>
+                                    <br>
+                                    <div class="text-content3">
+                                        <span>Stream language</span>
+                                    </div>
+                                    
+                                    <div class="select">
+                                        <select name="format1" id="format1">
+                                            <option selected disabled>language 1</option>
+                                            <option value="en-US">English</option>
+                                            <option value="es-ES">Spanish</option>
+                                            <option value="bg-BG">Bulgarian</option>
+                                            <option value="cs-CZ">Czech</option>
+                                            <option value="da-DK">Danish</option>
+                                            
+                                            <option value="de-DE">German</option>
+                                            <option value="el-GR">Greek</option>
+                                            <option value="fi-FI">Finnish</option>
+                                            <option value="fr-FR">French</option>
+                                            <option value="hu-HU">Hungarian</option>
+                                          
+                                            <option value="it-IT">Italian</option>
+                                            <option value="nl-NL">Dutch</option>
+                                            <option value="nb-NO">Norwegian</option>
+                                            <option value="pl-PL">Polish</option>
+                                            <option value="pt-BR">Portuguese</option>
+                                          
+                                            <option value="ro-RO">Romanian</option>
+                                            <option value="hr-HR">Croatian</option>
+                                            <option value="sk-SK">Slovak</option>
+                                            <option value="sv-SE">Swedish</option>
+                                            <option value="ja-JP">Japanese</option>
+                                            
+                                            <option value="ru-RU">Russian</option>
+                                        </select>
+                                    </div>
+                                    <div class="text-content3">
+                                        <span>Translated language</span>
+                                    </div>
+                                  
+                                    <div class="select">
+                                        <select name="format2" id="format2">
+                                            <option selected disabled>language 2</option>
+                                            <option value="en-US">English</option>
+                                            <option value="es-ES">Spanish</option>
+                                            <option value="bg-BG">Bulgarian</option>
+                                            <option value="cs-CZ">Czech</option>
+                                            <option value="da-DK">Danish</option>
+                                            
+                                            <option value="de-DE">German</option>
+                                            <option value="el-GR">Greek</option>
+                                            <option value="fi-FI">Finnish</option>
+                                            <option value="fr-FR">French</option>
+                                            <option value="hu-HU">Hungarian</option>
+                                          
+                                            <option value="it-IT">Italian</option>
+                                            <option value="nl-NL">Dutch</option>
+                                            <option value="nb-NO">Norwegian</option>
+                                            <option value="pl-PL">Polish</option>
+                                            <option value="pt-BR">Portuguese</option>
+                                          
+                                            <option value="ro-RO">Romanian</option>
+                                            <option value="hr-HR">Croatian</option>
+                                            <option value="sk-SK">Slovak</option>
+                                            <option value="sv-SE">Swedish</option>
+                                            <option value="ja-JP">Japanese</option>
+                                          
+                                            <option value="ru-RU">Russian</option>
+                                        </select>
+                                    </div>
+                                    <p id="language_no_selected"></p>
+                                </div>
+
+                                
+
+                                
+                                        
+                                <div id="block3" class="dinamic">
+                                    <div class="text-content2">
+                                        <span>Supported by <span style="color: rgb(0, 255, 0); font-weight: bold;">streamlanguages.com</span></span>
+                                    </div>
+                                    <br>
+                                    <div id="translated_text" class="translated_text"></div>
+                                    <div class="card-055">
+                                        <button id="startButton" class="stepButton" onclick="start_exe()">Start</button>
+                                    </div>
+                                  
+                                  
+                                </div>
+                                
+                              
+                                
+                                
+                                
+                                
+                               
+                            </div>
+                            
+                            
+                        </div>
+
+                       
+                        
+                    </div>
+                    
+                </div>
+                <br><br><br><br>
+                
+        </div>
+    </div>
+    
+  </div>
+  
+  <script src="dashboard.js"></script>
+  <script src="script_dashboard.js"></script>
+  <script src="send_short_key.js"></script>
+  <script src="size_window.js"></script>
+
+</body>
+</html>
