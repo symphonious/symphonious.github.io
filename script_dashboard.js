@@ -7,7 +7,7 @@ window.addEventListener("message", (event) => {
   const msg = event.data;
   //const words = msg.split(" ");
   let words = " ";
-  if (!msg.includes('_') && !msg.includes('Loading...') && !msg.includes('.....')) {
+  if (!msg.includes('_')) {
       console.log("1");
       words = msg.split(" ");
       socket.send("electron"+"-"+msg);
