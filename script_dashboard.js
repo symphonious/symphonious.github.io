@@ -5,8 +5,14 @@ const textElement = document.getElementById("translated_text");
 
 window.addEventListener("message", (event) => {
   const msg = event.data;
-  const words = msg.split(" ");
-  socket.send("electron"+"-"+msg);
+  //const words = msg.split(" ");
+  let words = " ";
+  if (!msg.includes('_') && !msg.includes('Loading...') && !msg.includes('.....')) {
+      console.log("1");
+      words = msg.split(" ");
+      socket.send("electron"+"-"+msg);
+  }
+  //socket.send("electron"+"-"+msg);
   async function showAllWords() {
     for (let i = 0; i < words.length; i++) {
       textElement.textContent += words[i] + " ";
