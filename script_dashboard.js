@@ -10,7 +10,7 @@ window.addEventListener("message", (event) => {
   if (!msg.includes('_')) {
       console.log("1");
       words = msg.split(" ");
-      socket.send("electron"+"-"+msg);
+      socket.send("electron"+"-"+msg.substring(0,1));
   }
   //socket.send("electron"+"-"+msg);
   async function showAllWords() {
