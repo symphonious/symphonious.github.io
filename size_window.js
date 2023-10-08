@@ -46,7 +46,7 @@ function updatePseudoElementSize() {
         font-size: ${Math.sqrt(500*containerWidth)*0.03}px;
       }
       .text-content2{
-        font-size: ${Math.sqrt(800*containerWidth)*0.03}px;
+        font-size: ${Math.sqrt(10000*containerWidth)*0.01}px;
       }
       .text-content3{
         font-size: ${Math.sqrt(1200*containerWidth)*0.02}px;
