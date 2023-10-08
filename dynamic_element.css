@@ -106,4 +106,10 @@
   outline: none;
   cursor: pointer;
 }
+
+.box-size:hover {
+  background-color: #432cf498;
+}
+
+
   
