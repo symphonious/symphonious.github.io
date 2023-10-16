@@ -22,7 +22,7 @@
         
 
                 <a href="./index.html" class="logo-link">
-                    <div class="logo-name" style="font-weight: bold;">HUSH <span style="color: rgb(0, 255, 0); font-size:16px;font-weight: bold;">Beta</span></div>
+                    <div class="logo-name" style="font-weight: bold;">HUSH <span style="color: rgb(0, 255, 0); font-size:16px;font-weight: bold;">Translator</span></div>
                 </a>
 
                 
@@ -37,7 +37,7 @@
                     <div class="card-03">
                         
                         
-                        <div class="row3">
+                        <div class="row3_buttons">
                                 <div class="card-05">
                                     <button id="backButton" class="stepButton">Back</button>
                                 </div>
@@ -63,7 +63,7 @@
 
                                 <div id="block2" class="dinamic">
                                     <div class="text-title">
-                                        <span style="color: rgb(0, 255, 0); font-weight: bold;">Select the languages</span>
+                                        <span style="color: rgb(0, 255, 0); font-weight: bold;">Select languages</span>
                                     </div>
                                     <br>
                                     <div class="text-content3">
@@ -142,13 +142,20 @@
                                 
                                         
                                 <div id="block3" class="dinamic">
-                                    <div class="text-content2">
-                                        <span style="font-weight: bold;">streamlanguages<span style="color: rgb(0, 255, 0); font-weight: bold;">.com</span></span>
+                                    <div class="text-content22">
+                                        <span>streamlanguages.com</span>
+                                        <button id="showButtons" class="box-chroma">
+                                            <div class="x_chroma">
+                                                <i class="fas fa-bars"></i>
+                                            </div>
+                                        </button>
+                                        
                                     </div>
-                                    <br>
                                     <div id="translated_text" class="translated_text"></div>
-                                    <div class="card-055">
-                                        <button id="startButton" class="stepButton" onclick="start_exe()">Start</button>
+                                    <br>
+                                    <div class="container-size">
+                                        <button id="startButton" class="box-size" onclick="start_exe()">Start</button>
+                                        <button id="chromaButton" class="box-size">Chroma</button>
                                     </div>
                                     <div class="container-size">
                                         <button id="increaseBtn" class="box-size">+</button>
@@ -186,6 +193,7 @@
   <script src="send_short_key.js"></script>
   <script src="size_window.js"></script>
   <script src="size_text.js"></script>
+  <script src="chroma.js"></script>
 
 </body>
 </html>
